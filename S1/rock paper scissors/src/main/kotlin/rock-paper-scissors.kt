@@ -18,6 +18,12 @@ fun main() {
             if(computerChoice == "scissors") {
                 println("you lose")
             }
+            if(computerChoice == "lizard") {
+                println("you lose")
+            }
+            if(computerChoice == "spock") {
+                println("you win")
+            }
         }
 
         if(userChoice == "rock"){
@@ -27,6 +33,7 @@ fun main() {
             if(computerChoice == "scissors") {
                 println("you win")
             }
+            
         }
 
         if(userChoice == "scissors"){
