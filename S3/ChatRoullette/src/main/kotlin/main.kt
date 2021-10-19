@@ -15,5 +15,5 @@ fun main(){
     val pickPerson = persons.random()
 
     println("Hi there my name is $pickPerson")
-//    Person.introduce(pickPerson)
+    pickPerson.introduce()
 }
