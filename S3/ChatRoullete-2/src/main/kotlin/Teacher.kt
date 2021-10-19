@@ -1,4 +1,8 @@
-class Teacher(override val name: String): Person(name)  {
+class Teacher(protected val name: String): ChatPartner  {
+    override fun introduce(){
+        println("Hi, I'm $name")
+    }
+
     override fun talk(){
         funFact()
     }

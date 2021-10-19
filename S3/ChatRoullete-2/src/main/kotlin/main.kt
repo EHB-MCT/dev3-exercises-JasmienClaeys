@@ -23,7 +23,7 @@ fun main(){
 
 
     //deel 3
-    val persons = arrayOf(Student("Sam"), Teacher("Bruno"), Comedian("Balloon"), Chatbot)
+    val persons = arrayOf(Student("Sam"), Teacher("Bruno"), Comedian("Balloon"), Chatbot("Clippy"))
 
     val chatMatch = persons.random()
     chatMatch.introduce()

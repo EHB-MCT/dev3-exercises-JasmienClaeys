@@ -1,5 +1,9 @@
-class Chatbot (val name: String): Person{
+class Chatbot (val name: String): ChatPartner {
+    override fun introduce(){
+        println("Hi, I'm clippy")
+    }
+
     override fun talk() {
-        super.talk()
+        println("Did you know trees are green")
     }
 }
