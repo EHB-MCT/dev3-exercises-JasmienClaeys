@@ -13,9 +13,19 @@ fun main(){
 //
 //    println("Hi there my name is $pickPerson")
 
-    val chatPartners = arrayOf(Student("Sam"), Teacher("Bruno"), Comedian("Balloon"))
 
-    val chatPartner = chatPartners.random()
-    chatPartner.introduce()
-    chatPartner.talk()
+    // deel 2
+//    val chatPartners = arrayOf(Student("Sam"), Teacher("Bruno"), Comedian("Balloon"))
+//
+//    val chatPartner = chatPartners.random()
+//    chatPartner.introduce()
+//    chatPartner.talk()
+
+
+    //deel 3
+    val persons = arrayOf(Student("Sam"), Teacher("Bruno"), Comedian("Balloon"), Chatbot)
+
+    val chatMatch = persons.random()
+    chatMatch.introduce()
+    chatMatch.talk()
 }
