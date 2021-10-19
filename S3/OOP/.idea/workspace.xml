@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7283592f-7437-4dfa-8f85-bc236e482bbf" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOP.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/annotations-13.0-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/annotations-13.0-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/annotations-13.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hamcrest-core-1.3-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hamcrest-core-1.3-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hamcrest-core-1.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/junit-4.12-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/junit-4.12-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/junit-4.12.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/kotlin-stdlib-1.5.10-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/kotlin-stdlib-1.5.10-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/kotlin-stdlib-1.5.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/kotlin-stdlib-common-1.5.10-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/kotlin-stdlib-common-1.5.10-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/kotlin-stdlib-common-1.5.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/kotlin-test-1.5.10-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/kotlin-test-1.5.10-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/kotlin-test-1.5.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/kotlin-test-junit-1.5.10-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/kotlin-test-junit-1.5.10-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/kotlin-test-junit-1.5.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Course.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Hero.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Person.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Villain.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/main.kt" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin File" />
+        <option value="Kotlin Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1ziQB1BWDf5qN3aNNS9y9wgS65d" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../chatRoulette" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7283592f-7437-4dfa-8f85-bc236e482bbf" name="Changes" comment="" />
+      <created>1634628291536</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1634628291536</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
