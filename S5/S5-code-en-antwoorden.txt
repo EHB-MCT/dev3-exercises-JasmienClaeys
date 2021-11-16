@@ -1,4 +1,5 @@
 Session 5
+
 First batch
    EX 1
       code:
@@ -43,3 +44,83 @@ First batch
 	WHERE productLine LIKE '%Ship%';
       answer:
 	9
+
+
+Second batch
+   EX 1
+      code:
+	SELECT COUNT(*) FROM orders
+	INNER JOIN customers ON customers.customerNumber = orders.customerNumber
+	WHERE customers.customerNumber='328';
+
+	SELECT * FROM orders
+	INNER JOIN customers ON customers.customerNumber = orders.customerNumber
+	WHERE customers.customerNumber='328';
+
+	SELECT COUNT(*) FROM orders
+	WHERE customers.customerNumber='328';
+
+      answer: 
+	3
+
+	10233	2004-03-29	2004-04-04	2004-04-02	Shipped	Customer requested special shippment. The instructions were passed along to the warehouse	328	328	Tekni Collectables Inc.	Brown	William	2015559350	7476 Moss Rd.	NULL	Newark	NJ	94019	USA	1323	43000.00
+	10251	2004-05-18	2004-05-24	2004-05-24	Shipped	NULL	328	328	Tekni Collectables Inc.	Brown	William	2015559350	7476 Moss Rd.	NULL	Newark	NJ	94019	USA	1323	43000.00
+	10401	2005-04-03	2005-04-14	NULL		On Hold	Customer credit limit exceeded. Will ship when a payment is received.	328	328	Tekni Collectables Inc.	Brown	William	2015559350	7476 Moss Rd.	NULL	Newark	NJ	94019	USA	1323	43000.00
+	
+	3
+   EX 2
+      code:
+	SELECT COUNT(*) FROM orders
+	INNER JOIN customers ON customers.customerNumber = orders.customerNumber
+	WHERE customers.contactFirstName='Julie' AND customers.contactLastName='Young';
+
+	SELECT * FROM orders
+	INNER JOIN customers ON customers.customerNumber = orders.customerNumber
+	WHERE customers.contactFirstName='Julie' AND customers.contactLastName='Young';
+
+	(SELECT COUNT(*) AS amount FROM orders
+	 LEFT JOIN customers ON customers.customerNumber = orders.customerNumber
+	 WHERE customers.contactFirstName='Julie' AND customers.contactLastName='Young';)
+      answer:
+	3
+
+	10145	2003-08-25	2003-09-02	2003-08-31	Shipped	NULL	205	205	Toys4GrownUps.com	Young	Julie	6265557265	78934 Hillside Dr.	NULL	Pasadena	CA	90003	USA	1166	90700.00
+	10189	2003-11-18	2003-11-25	2003-11-24	Shipped	They want to reevaluate their terms agreement with Finance.	205	205	Toys4GrownUps.com	Young	Julie	6265557265	78934 Hillside Dr.	NULL	Pasadena	CA	90003	USA	1166	90700.00
+	10367	2005-01-12	2005-01-21	2005-01-16	Resolved	"This order was disputed and resolved on 2/1/2005. Customer claimed that container with shipment was damaged. FedEx's investigation proved this wrong."	205	205	Toys4GrownUps.com	Young	Julie	6265557265	78934 Hillside Dr.	NULL	Pasadena	CA	90003	USA	1166	90700.00
+   EX 3
+      code:
+	SELECT COUNT(*) FROM customers
+	WHERE customers.creditLimit='0%' AND customers.country='USA';
+      answer:
+	1
+   EX 4
+      code:
+	SELECT AVG(payments.amount), customers.customerName FROM payments
+	INNER JOIN customers ON payments.customerNumber = customers.customerNumber
+	GROUP BY customers.customerNumber
+	ORDER BY AVG(payments.amount) DESC LIMIT 1;
+
+	(SELECT AVG(amount) AS average, customers.customerName FROM payments
+	 INNER JOIN customers ON payments.customerNumber = customers.customerNumber
+	 GROUP BY customers.customerNumber
+	 ORDER BY average DESC LIMIT 1;)
+
+      answer:
+	80375.240000	Collectable Mini Designs Co.
+
+
+Third batch
+   EX 1
+      code:
+	SELECT SUM(payments.amount), customers.customerNumber, customers.customerName FROM payments
+	INNER JOIN customers ON customers.customerNumber = payments.customerNumber
+	WHERE customers.contactFirstName='William' AND customers.contactLastName='Brown' AND payments.paymentDate LIKE '2004%'
+	GROUP BY customers.customerName;
+      answer:
+	38281.51	328	Tekni Collectables Inc.
+   EX 2
+      code:
+      answer:
+   EX 3
+      code:
+      answer:
