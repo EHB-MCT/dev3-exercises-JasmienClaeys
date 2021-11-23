@@ -34,7 +34,7 @@ fun  main() {
         val city1 = result.getString("departure_city")
         val time = result.getString("departure")
         println(city1)
-        println(time)
+        println(time) 
     }
 
 
