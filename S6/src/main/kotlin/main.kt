@@ -24,7 +24,9 @@ fun  main() {
 
     val statement = connection.prepareStatement("SELECT * FROM S6_trains " +
             "INNER JOIN S6_rides ON S6_trains.id = S6_rides.train_id " +
-            "WHERE departure_city = ?")
+            "WHERE departure_city = ? " +
+            "ORDER BY departure " +
+            "LIMIT 1")
     // The result of your query will be a type ResultSet
     // But since the library is based on Java, we get a type from Java
     statement.setString(1, search)
@@ -34,7 +36,7 @@ fun  main() {
         val city1 = result.getString("departure_city")
         val time = result.getString("departure")
         println(city1)
-        println(time) 
+        println(time)
     }
 
 
