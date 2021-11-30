@@ -1,4 +1,4 @@
-class Duolingo {
+class Duolingo (roundSize: String, language: String){
     val words = mutableListOf<Word>(
         Word("Matka", "Moeder", "Tsjechisch"),
         Word("Otec", "Vader", "Tsjechisch"),
@@ -23,13 +23,7 @@ class Duolingo {
         Word("Kastaar", "Durver", "West-Vlaams")
     )
 
-    //val words: mutableListOf<Word>()
-
     fun play() {
-        //val randomWord = words.random()
-        //randomWord.original)
-        //val currentWords = words.filter {it<5}
-
         //words.shuffle()
         //val fiveWords = words.take(5).toMutableSet()
 
@@ -70,4 +64,6 @@ class Duolingo {
 
 
     }
+
+
 }
