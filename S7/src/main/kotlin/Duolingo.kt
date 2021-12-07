@@ -1,4 +1,4 @@
-class Duolingo (var roundSize: Int, var language: String){
+class Duolingo (var roundSize: Int = 5, var language: String){
     val words = mutableListOf<Word>(
         Word("Matka", "Moeder", "Tsjechisch"),
         Word("Otec", "Vader", "Tsjechisch"),
