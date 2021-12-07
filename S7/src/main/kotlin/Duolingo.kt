@@ -64,10 +64,10 @@ class Duolingo (var roundSize: Int = 5, var language: String){
             }
             println("Aantal woorden: ${currentWords.count()}")
         }
-
-
-
     }
 
 
+    fun playHard(){
+
+    }
 }
