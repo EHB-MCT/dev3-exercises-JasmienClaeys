@@ -1,4 +1,4 @@
-class Duolingo (var roundSize: Int = 5, var language: String){
+class Duolingo (var roundSize: Int = 5, var language: String, var difficulty: String){
     var words = mutableListOf<Word>(
         CzechWord("Matka", "Moeder"),
         CzechWord("Otec", "Vader"),
@@ -24,7 +24,9 @@ class Duolingo (var roundSize: Int = 5, var language: String){
     )
 
     init {
-        words = words.filter { it.language == language  }.toMutableList()
+        if(difficulty == "Easy") {
+            words = words.filter { it.language == language }.toMutableList()
+        }
     }
 
     fun play() {
@@ -64,10 +66,5 @@ class Duolingo (var roundSize: Int = 5, var language: String){
             }
             println("Aantal woorden: ${currentWords.count()}")
         }
-    }
-
-
-    fun playHard(){
-
     }
 }
