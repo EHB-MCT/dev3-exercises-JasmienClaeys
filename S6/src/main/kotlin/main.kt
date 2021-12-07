@@ -1,6 +1,7 @@
 import java.sql.*
 import java.util.*
 
+
 fun  main() {
     Class.forName("com.mysql.cj.jdbc.Driver").getDeclaredConstructor().newInstance()
 
@@ -38,8 +39,5 @@ fun  main() {
         println(city1)
         println(time)
     }
-
-
-
     //SELECT * FROM trains
 }

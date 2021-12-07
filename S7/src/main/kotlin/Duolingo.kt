@@ -1,4 +1,4 @@
-class Duolingo (roundSize: String, language: String){
+class Duolingo (var roundSize: Int, var language: String){
     val words = mutableListOf<Word>(
         Word("Matka", "Moeder", "Tsjechisch"),
         Word("Otec", "Vader", "Tsjechisch"),
@@ -44,7 +44,9 @@ class Duolingo (roundSize: String, language: String){
             //}
        //}
 
-        val currentWords = words.shuffled().take(5).toMutableSet()
+        val wordsInLanguage = words.filter { it.language == language  }
+        val currentWords = wordsInLanguage.shuffled().take(roundSize).toMutableSet()
+
         println(currentWords.count())
 
         while (currentWords.isNotEmpty()) {
@@ -58,7 +60,7 @@ class Duolingo (roundSize: String, language: String){
             }else{
                 println("Jammer, maar het is fout... ${selectedWord.original} vertaald uit het ${selectedWord.language} betekent ${selectedWord.translated}")
             }
-            println("Aantal worden nog te gaan: ${currentWords.count()}")
+            println("Aantal woorden: ${currentWords.count()}")
         }
 
 
