@@ -1,27 +1,31 @@
 class Duolingo (var roundSize: Int = 5, var language: String){
-    val words = mutableListOf<Word>(
-        Word("Matka", "Moeder", "Tsjechisch"),
-        Word("Otec", "Vader", "Tsjechisch"),
-        Word("Dobrý den", "Goedendag", "Tsjechisch"),
-        Word("Dobrou noc", "Welterusten", "Tsjechisch"),
-        Word("Děkuji", "Bedankt", "Tsjechisch"),
-        Word("Prosím", "Graag gedaan", "Tsjechisch"),
-        Word("Ahoj", "Hallo", "Tsjechisch"),
-        Word("Na shledanou", "Tot ziens", "Tsjechisch"),
-        Word("Dobré ráno", "Goedemorgen", "Tsjechisch"),
-        Word("Dobrý večer", "Goedenavond", "Tsjechisch"),
+    var words = mutableListOf<Word>(
+        CzechWord("Matka", "Moeder"),
+        CzechWord("Otec", "Vader"),
+        CzechWord("Dobrý den", "Goedendag"),
+        CzechWord("Dobrou noc", "Welterusten"),
+        CzechWord("Děkuji", "Bedankt"),
+        CzechWord("Prosím", "Graag gedaan"),
+        CzechWord("Ahoj", "Hallo"),
+        CzechWord("Na shledanou", "Tot ziens"),
+        CzechWord("Dobré ráno", "Goedemorgen"),
+        CzechWord("Dobrý večer", "Goedenavond"),
 
-        Word("Stutte", "Boterham", "West-Vlaams"),
-        Word("Taloore", "Bord", "West-Vlaams"),
-        Word("Frezen", "Aardbeien", "West-Vlaams"),
-        Word("Charletang", "Bedrieger", "West-Vlaams"),
-        Word("Beire", "Super", "West-Vlaams"),
-        Word("Ges", "Gras", "West-Vlaams"),
-        Word("Gekapt", "Gehakt", "West-Vlaams"),
-        Word("Klutters", "Klein geld", "West-Vlaams"),
-        Word("Kattekop", "Meervoudig stopcontact", "West-Vlaams"),
-        Word("Kastaar", "Durver", "West-Vlaams")
+        WestFlemishWord("Stutte", "Boterham"),
+        WestFlemishWord("Taloore", "Bord"),
+        WestFlemishWord("Frezen", "Aardbeien"),
+        WestFlemishWord("Charletang", "Bedrieger"),
+        WestFlemishWord("Beire", "Super"),
+        WestFlemishWord("Ges", "Gras"),
+        WestFlemishWord("Gekapt", "Gehakt"),
+        WestFlemishWord("Klutters", "Klein geld"),
+        WestFlemishWord("Kattekop", "Meervoudig stopcontact"),
+        WestFlemishWord("Kastaar", "Durver")
     )
+
+    init {
+        words = words.filter { it.language == language  }.toMutableList()
+    }
 
     fun play() {
         //words.shuffle()
@@ -44,9 +48,7 @@ class Duolingo (var roundSize: Int = 5, var language: String){
             //}
        //}
 
-        val wordsInLanguage = words.filter { it.language == language  }
-        val currentWords = wordsInLanguage.shuffled().take(roundSize).toMutableSet()
-
+        val currentWords = words.shuffled().take(roundSize).toMutableSet()
         println(currentWords.count())
 
         while (currentWords.isNotEmpty()) {
